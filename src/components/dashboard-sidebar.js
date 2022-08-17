@@ -14,6 +14,7 @@ import { UserAdd as UserAddIcon } from '../icons/user-add';
 import { Users as UsersIcon } from '../icons/users';
 import { XCircle as XCircleIcon } from '../icons/x-circle';
 import { Logo } from './logo';
+import { ReactComponent as LogoSVG } from '../../public/static/adslogo.svg';
 import { NavItem } from './nav-item';
 
 const items = [
@@ -99,8 +100,8 @@ export const DashboardSidebar = (props) => {
               <a>
                 <Logo
                   sx={{
-                    height: 42,
-                    width: 42
+                    height: 50,
+                    width: 50
                   }}
                 />
               </a>
@@ -124,15 +125,15 @@ export const DashboardSidebar = (props) => {
                   color="inherit"
                   variant="subtitle1"
                 >
-                  Acme Inc
+                  Atomic Data Sciences
                 </Typography>
                 <Typography
                   color="neutral.400"
                   variant="body2"
                 >
-                  Your tier
+                  Tier
                   {' '}
-                  : Premium
+                  : Data Management
                 </Typography>
               </div>
               <SelectorIcon
@@ -225,7 +226,7 @@ export const DashboardSidebar = (props) => {
           sx: {
             backgroundColor: '#1e4d98', 
             // 'neutral.100',
-            color: '#FF0000',
+            color: '#FFFFFF',
             width: 280
           }
         }}
@@ -243,8 +244,8 @@ export const DashboardSidebar = (props) => {
       open={open}
       PaperProps={{
         sx: {
-          backgroundColor: 'neutral.100',
-          color: '#FF0000',
+          backgroundColor: '#1e4d98',
+          color: '#FFFFFF',
           width: 280
         }
       }}

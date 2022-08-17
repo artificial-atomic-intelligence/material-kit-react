@@ -3,13 +3,35 @@ import { Box, Button, Card, CardContent, CardHeader, Divider, useTheme } from '@
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import ArrowRightIcon from '@mui/icons-material/ArrowRight';
 
+import Plot from 'plotly.js';
+
+// export class Sales extends React.Component {
+//   render() {
+//     return (
+//       <Plot
+//         data={[
+//           {
+//             x: [1, 2, 3],
+//             y: [2, 6, 3],
+//             type: 'scatter',
+//             mode: 'lines+markers',
+//             marker: {color: 'red'},
+//           },
+//           {type: 'bar', x: [1, 2, 3], y: [2, 5, 3]},
+//         ]}
+//         layout={ {width: 320, height: 240, title: 'A Fancy Plot'} }
+//       />
+//     );
+//   }
+// }
+
 export const Sales = (props) => {
   const theme = useTheme();
 
   const data = {
     datasets: [
       {
-        backgroundColor: '#3F51B5',
+        backgroundColor: '#FF0000',
         barPercentage: 0.5,
         barThickness: 12,
         borderRadius: 4,
